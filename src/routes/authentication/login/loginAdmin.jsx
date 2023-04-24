@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import Login from "./login";
+
 export default function loginA() {
     return (
         <>
@@ -27,6 +29,11 @@ export default function loginA() {
                     </ul>
                 </nav>
             </div >
+
+            <div id= "login">
+                <h2>Login Admin</h2>
+                <Login></Login>
+            </div>
 
             <div id="detail"></div>
         </>

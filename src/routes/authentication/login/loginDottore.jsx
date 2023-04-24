@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Login from "./login";
 
 export default function loginD() {
     return (
@@ -28,6 +29,10 @@ export default function loginD() {
                 </nav>
             </div>
 
+            <div id= "login">
+                <h2>Login Dottore</h2>
+                <Login></Login>
+            </div>
 
             <div id="detail"></div>
         </>
