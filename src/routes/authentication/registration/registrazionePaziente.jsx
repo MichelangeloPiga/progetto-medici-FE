@@ -13,7 +13,6 @@ export default function registrazioneP() {
                         <li>
                             <NavLink to="/registrazioneDottore">Registrazione Dottore</NavLink>
                         </li>
-
                     </ul>
                 </nav>
 
