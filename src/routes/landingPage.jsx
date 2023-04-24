@@ -8,10 +8,10 @@ export default function landingPage() {
                 <nav>
                     <ul>
                         <li>
-                            <NavLink to="/generalLogin" activeClassName="active">Login Paziente - Dottore - Admin</NavLink>
+                            <NavLink to="/loginGenerale" activeClassName="active">Login Paziente - Dottore - Admin</NavLink>
                         </li>
                         <li>
-                            <a href={`/registrazioneGenerale`}>Registrazione Paziente</a>
+                            <NavLink to="/registrazioneGenerale" activeClassName="active">Registrazione Paziente - Dottore</NavLink>
                         </li>
                     </ul>
                 </nav>

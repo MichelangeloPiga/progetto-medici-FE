@@ -6,8 +6,8 @@ import LoginDottore from "./routes/authentication/login/loginDottore.jsx";
 import LoginAdmin from "./routes/authentication/login/loginAdmin.jsx";
 import RegistrazionePaziente from "./routes/authentication/registration/registrazionePaziente.jsx";
 import RegistrazioneDottore from "./routes/authentication/registration/registrazioneDottore.jsx";
-
-
+import RegistrazioneGenerale from "./routes/authentication/registration/registrazioneGenerale.jsx";
+import LoginGenerale from "./routes/authentication/login/loginGenerale.jsx";
 
 import {
   createBrowserRouter,
@@ -23,6 +23,15 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />, // The element to render when an error occurs
 
   },
+  {
+    path: "/registrazioneGenerale",
+    element: <RegistrazioneGenerale />,
+  },
+
+  {
+    path: "/loginGenerale",
+    element: <LoginGenerale />,
+  },
 
   {
     path: "/loginPaziente",
@@ -36,6 +45,7 @@ const router = createBrowserRouter([
     path: "/loginAdmin",
     element: <LoginAdmin />,
   },
+
   {
     path: "/registrazionePaziente",
     element: <RegistrazionePaziente />,
@@ -51,4 +61,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
+
 );
+
+

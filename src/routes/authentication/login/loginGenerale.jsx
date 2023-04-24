@@ -1,40 +1,35 @@
+import { NavLink } from "react-router-dom";
 export default function loginP() {
     return (
         <>
             <div id="sidebar">
                 <h1>Progetto Medici - General Login</h1>
+                <NavLink to="/" activeClassName="active">Homepage</NavLink>
+                <nav>
+                    <ul>
 
+                        <li>
+                            <NavLink to="/loginPaziente">Login Paziente</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/loginDottore">Login Dottore</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/loginAdmin">Login Admin</NavLink>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2>Non sei ancora registrato?</h2>
                 <nav>
                     <ul>
                         <li>
-                            <a path={`/`}>Homepage</a>
-                        </li>
-                        <li>
-                            <a href={`/loginDottore`}>Login Paziente</a>
-                        </li>
-                        <li>
-                            <a href={`/loginDottore`}>Login Dottore</a>
-                        </li>
-                        <li>
-                            <a href={`/loginAdmin`}>Login Admin</a>
+                            <NavLink to="/registrazioneGenerale" activeClassName="active">Registrazione Paziente - Dottore</NavLink>
                         </li>
                     </ul>
                 </nav>
             </div >
 
-            <div id="notRegistered">
-                <h2>Non sei ancora registrato?</h2>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href={`/registrazionePaziente`}>Registrazione Paziente</a>
-                        </li>
-                        <li>
-                            <a href={`/registrazioneDottore`}>Registrazione Dottore</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
             <div id="detail"></div>
         </>
     );

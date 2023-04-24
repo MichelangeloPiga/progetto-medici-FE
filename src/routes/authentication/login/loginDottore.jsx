@@ -1,37 +1,33 @@
+import { NavLink } from "react-router-dom";
+
 export default function loginD() {
     return (
         <>
             <div id="sidebar">
                 <h1>Progetto Medici - Login Dottore</h1>
-
+                <NavLink to="/">Homepage</NavLink>
                 <nav>
+                    <h3>Non sei un dottore?</h3>
                     <ul>
                         <li>
-                            <a href={`/`}>Homepage</a>
+                            <NavLink to="/loginPaziente">Login Paziente</NavLink>
                         </li>
                         <li>
-                            <a href={`/loginPaziente`}>Login Paziente</a>
-                        </li>
-                        <li>
-                            <a href={`/loginAdmin`}>Login Admin</a>
+                            <NavLink to="/loginAdmin">Login Admin</NavLink>
                         </li>
                     </ul>
                 </nav>
-            </div >
 
-            <div id="notRegistered">
-                <h2>Non sei ancora registrato?</h2>
+                <h3>Non sei ancora registrato?</h3>
                 <nav>
                     <ul>
                         <li>
-                            <a href={`/registrazionePaziente`}>Registrazione Paziente</a>
-                        </li>
-                        <li>
-                            <a href={`/registrazioneDottore`}>Registrazione Dottore</a>
+                            <NavLink to="/registrazioneGenerale" activeClassName="active">Registrazione Paziente - Dottore</NavLink>
                         </li>
                     </ul>
                 </nav>
             </div>
+
 
             <div id="detail"></div>
         </>
