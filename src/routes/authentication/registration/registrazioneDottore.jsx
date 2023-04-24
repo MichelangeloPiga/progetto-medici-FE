@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Form, NavLink } from "react-router-dom";
 
 export default function RegistrazioneD() {
     return (
@@ -29,7 +29,7 @@ export default function RegistrazioneD() {
 
             <div id="registrazione">
                 <h2>Registrazione Dottore</h2>
-                <form>
+                <Form>
                     <label>
                         Nome:
                         <input type="text" name="nome" />
@@ -91,7 +91,7 @@ export default function RegistrazioneD() {
                         <input type="text" name="stato" />
                     </label>
                     <input type="submit" value="Submit" />
-                </form>
+                </Form>
             </div>
 
             <div id="detail"></div>
