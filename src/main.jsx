@@ -8,6 +8,7 @@ import RegistrazionePaziente from "./routes/authentication/registration/registra
 import RegistrazioneDottore from "./routes/authentication/registration/registrazioneDottore.jsx";
 import RegistrazioneGenerale from "./routes/authentication/registration/registrazioneGenerale.jsx";
 import LoginGenerale from "./routes/authentication/login/loginGenerale.jsx";
+//import Navbar from "./components/navbar.jsx";
 
 import {
   createBrowserRouter,
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
     path: "/", // The path to match
     element: < LandingPage />, // The element to render when the path matches
     errorElement: <ErrorPage />, // The element to render when an error occurs
-
   },
+
   {
     path: "/registrazioneGenerale",
     element: <RegistrazioneGenerale />,

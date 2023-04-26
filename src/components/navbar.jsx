@@ -1,17 +1,28 @@
-import React from 'react';
 
-class Navbar extends React.Component {
-    render() {
-        return (
-            <div className="navbar">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/generalLogin">Login</a></li>
-                    <li><a href="/generalRegistration">Registrazione</a></li>
-                </ul>
-            </div>
-        );
-    }
-}
+import { NavLink } from "react-router-dom";
+
+const Navbar = () => {
+    return (
+        <nav>
+            <ul>
+                <li>
+                    <NavLink activeClassName="active" exact to="/">
+                        Homepage
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName="active" to="/registrazioneGenerale">
+                        Registrazione
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName="active" to="/loginGenerale">
+                        Login
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
 export default Navbar;

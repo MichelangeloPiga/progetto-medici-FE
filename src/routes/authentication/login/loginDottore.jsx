@@ -23,7 +23,7 @@ export default function loginD() {
                 <nav>
                     <ul>
                         <li>
-                            <NavLink to="/registrazioneGenerale" activeClassName="active">Registrazione Paziente - Dottore</NavLink>
+                            <NavLink to="/registrazioneGenerale" >Registrazione Paziente - Dottore</NavLink>
                         </li>
                     </ul>
                 </nav>
